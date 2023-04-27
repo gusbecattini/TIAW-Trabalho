@@ -1,0 +1,40 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#textButtons {
+    display: inline-flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.title {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtext {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonBar {
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    display: inline;
+}
+
+#sendButton {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    justify-self: center;
+}
+
