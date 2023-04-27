@@ -1,0 +1,23 @@
+#main{
+    align-items: center;
+    justify-content: center;
+    margin: 130px 20px;
+}
+
+.text{
+    font-size:40pt;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+.relevant{
+    margin: 20px;
+    margin-top: 100px;
+}
+.relevant a{
+    font-size: 15pt;
+    display: inline-block;
+    color: #31313b;
+    font-weight: bold;
+    text-decoration: none;
+}
