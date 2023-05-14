@@ -3,7 +3,7 @@ var headerContent = `
   <!--Cabeçalho nav-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <img src="/images/logo_nbg.png" width="140px">
+        <img src="../images/logo_nbg.png" width="140px">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,10 +16,7 @@ var headerContent = `
             <a class="nav-link" href="sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Categorias</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="postagens.html">Categorias</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="Login.html">Sign in</a>
@@ -29,6 +26,7 @@ var headerContent = `
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn btn-outline-dark" type="submit">Search</button>
         </form>
+        <a href="profile.html" style="color:#31313b;"><i class="bi bi-person m-3" style="font-size:25px;"></i></a>
         </div>
     </div>
     </nav>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeConnect</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../static/Styles/all.css">
+        <link rel="stylesheet" href="../static/Styles/postagens.css">
+        <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+        <header id="header"></header>
+        <script src="../static/code/header.js"></script>
+        <script src="../static/code/scriptPosts.js"></script>
+
+        <main>
+            <div class="container-fluid my-5">
+                <div class="row justify-content-center mt-3 ">
+                    <div class="col-8 col-lg-5 ">
+                        <div class="input-group mb-3 w-100" >
+                            <input type="text " id="input1" class="form-control w-25"  placeholder="O que quer saber hoje?" aria-label="Recipient's username" aria-describedby="button-addon2" style="max-height: 40px;">
+                            <button id="bbusca" class="btn btn-secondary btn btn-outline-secondary text-light w-25 " type="button" id="button-addon2">Buscar</button>
+                        </div>    
+                    </div>
+                </div>
+
+                <div id="cards" class="row d-flex justify-content-center mt-3 mb-5" >
+
+                    <div class="col-10 col-md-8 col-lg-3  col-sm-10 mb-3 col-xl-3 ">
+                            <div class="card w-100" style="width: 18rem; ">
+                                <img src="../images/postImgs/react1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="card-title " id="text1">React ou angular?</h6>
+                                    <p class="card-text"></p>
+                                    <a id="bver" href="#" class="btn btn-secondary w-100">Ver sobre</a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-10 col-md-8 col-lg-3 col-sm-10 col-xl-3 mb-3">
+                        <div class="card w-100 " style="width: 18rem;">
+                            <img src="../images/postImgs/operador (1).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h6 class="card-title" id="text2">Como usar operador ternário?</h6>
+                            <p class="card-text"></p>
+                            <a id="bver" href="#" class="btn btn-secondary w-100">Ver sobre</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-8 col-lg-3 col-sm-10 col-xl-3 mb-3">
+                        <div class="card w-100 " style="width: 18rem;">
+                            <img src="../images/postImgs/unity.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h6 class="card-title w-100" id="text3">Unity ou Unreal? <p></p><p></p></h6>
+                            <p class="card-text"></p>
+                            <a id="bver" href="#" class="btn btn-secondary w-100">Ver sobre</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-0 col-sm-0 col-md-0 col-lg-2 ">
+                        <ul id="lista"> 
+                            <li class=""><a href=""> Assuntos populares </a></li>
+                            <li class=""><a href=""> Hardware </a></li>
+                            <li class=""><a href=""> Sofware </a></li>
+                            <li class=""><a href="">  Processadores </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-10 col-md-8 col-lg-3  col-sm-10 mb-3 col-xl-3 ">
+                        <div class="card w-100 " style="width: 18rem;">
+                            <img src="../images/postImgs/ia (1).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title " id="text4">ChatGPT e o Bard, chatbot de i.a do Google </h6>
+                                <p class="card-text"></p>
+                                <a id="bver" href="#" class="btn btn-secondary w-100">Ver sobre</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-8 col-lg-3  col-sm-10 mb-3 col-xl-3 ">
+                        <div class="card w-100" style="width: 18rem; ">
+                            <img src="../images/postImgs/processador.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title " id="text5">Qual processador escolher?</h6>
+                                <p class="card-text"></p>
+                                <a id="bver" href="#" class="btn btn-secondary w-100">Ver sobre</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-10 col-md-8 col-lg-3  col-sm-10 mb-3 col-xl-3 ">
+                        <div class="card w-100" style="width: 18rem; ">
+                            <img src="../images/postImgs/gpu.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title " id="text6">Novas placas de video</h6>
+                                <p class="card-text"></p>
+                                <a id="bver" href="#" class="btn btn-secondary w-100">Ver sobre</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-0 col-sm-0 col-md-0 col-lg-2 ">
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer"></footer>
+        <script src="../static/code/footer.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>  
