@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça o seu Post</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/Styles/all.css">
+    <link rel="stylesheet" href="../static/Styles/post.css">
+    <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
+    <script src="../static/code/post.js"></script>
+    <script src="../static/code/sendPost.js"></script>
+    <script src="../static/code/test.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.7.0.js"
+			  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+			  crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header"></header>
+    <script src="../static/code/header.js"></script>
+    <main>
+        <!--Texto-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 my-5" style="text-align: center;">
+                    <h1 class="title">
+                        Faça sua contribuição
+                    </h1>
+                    <p class="subtext">
+                        Poste uma dúvida, seu artigo, ou simplesmente inicie uma discussão!
+                    </p>
+                </div>
+            </div>
+            <!--Botões-->
+            <div id="textBlock" class="row">
+                <div class="buttonBar w-100">
+                    <div class="col-md-12 m-2" id="textButtons"   style="justify-content: center;">
+                        <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
+                            <button type="button" onclick="bold()" class=" shadow-sm btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Negrito"><strong>B</strong></button>
+
+                        </div>
+                        <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
+                            <button type="button" onclick="italic()" class="shadow-sm btn btn-outline-secondary"class=" shadow-sm btn btn-outline-secondary"data-toggle="tooltip"
+                        data-placement="top"
+                        title="Itálico"><i>I</i></button>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
+                            <button type="button" onclick="left()" class="shadow-sm btn btn-outline-secondary" class=" shadow-sm btn btn-outline-secondary"data-toggle="tooltip" data-placement="top"
+                        title="À esquerda">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
+                            <button type="button" onclick="center()" class="shadow-sm btn btn-outline-secondary" class=" shadow-sm btn btn-outline-secondary"data-toggle="tooltip" data-placement="top"
+                        title="Centralizar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-center" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                        </svg></button>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
+                            <button type="button" onclick="right()" class="shadow-sm btn btn-outline-secondary" class=" shadow-sm btn btn-outline-secondary"data-toggle="tooltip" data-placement="top"
+                        title="À direita"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-text-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                        </svg></button>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
+                            <button type="button" onclick="Clear()" class="shadow-sm btn btn-outline-secondary" class=" shadow-sm btn btn-outline-secondary"data-toggle="tooltip" data-placement="top"
+                        title="Limpar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Caixa de texto
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-8">
+                    <div class="form-floating" id="postUser">
+                        <textarea class="form-control" id="textarea1" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 400px;" autofocus></textarea>
+                        <label for="floatingTextarea2">Digite aqui</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-4 text-center m-5">
+                    <button  type="submit" onclick="GetPost()" id="sendButton" type="submit" class="btn btn-dark p-2">Enviar<i class="bi bi-send-check-fill mx-2"></i><script>GetPost()</script></button>
+                </div>
+            </div>
+        </div> -->
+        <div class="row" style="justify-content: center;">
+            <div class="col-md-8">
+        <form id="myForm" class="form-floating">
+            <textarea id="myTextarea" class="form-control" style="height: 400px;" autofocus></textarea>
+            <br>
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-4 text-center m-5">
+            <button type="submit" id="sendButton" class="btn btn-dark p-2">Enviar<i class="bi bi-send-check-fill mx-2"></i></button>
+        </div>
+        </div>
+          </form>
+        </div>
+        </div>
+          <script>
+            function handleFormSubmission(event) {
+              event.preventDefault();
+
+              var textareaValue = document.getElementById('myTextarea').value;
+              sessionStorage.setItem('textareaValue', textareaValue);
+
+
+              window.location.href = 'profile.html';
+            }
+
+            document.getElementById('myForm').addEventListener('submit', handleFormSubmission);
+          </script>
+
+    </main>
+	<footer id="footer"></footer>
+    <script src="../static/code/footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+html{
+    height: 100%;
+  
+  }
+  
+  body{
+        min-height: calc(100vh - 497px - 206px);
+        height: 100%;
+        
+  }
+
+  main{
+    margin-bottom: 100px;
+  }
+
+  .btn{
+    background-color: #31313b;
+    color:#e6e6e6;
+  }
+  
+  #button-addon2{
+        color:white;        
+   }
+        
+  #lista > li > a {
+   text-decoration: none; 
+   color: grey; 
+        
+        }
+        
+  #lista > li{
+   list-style-type: ; 
+  }
+        
+  #input1{
+   height: 60px;
+  }
+  
+  #cards{
+    margin-bottom: 10px;
+  }
+  
+  #footer{
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+   
+    
+  
+  }
+  
+  @media (max-width: 993px)
+  { 
+        #lista{
+              display: none;
+        }
+  }
+  
+  @media (max-width: 653px ){
+        #input1{
+              font-size:14px;
+        }
+  
+        #bbusca{
+              font-size: 14px;
+        }
+        
+        #bver{
+          font-size: 12px;
+          
+        }
+  }
+  
+  @media (max-width: 378px){
+  
+        #input1{
+              font-size:12px;}
+  
+              #bbusca{
+                    font-size: 12px;
+              }
+  
+        }

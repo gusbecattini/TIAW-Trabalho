@@ -1,0 +1,47 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#textButtons {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.title {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtext {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonBar {
+    align-items: center;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 10px;
+    border:#31313b;
+    border-radius: 5px;
+    /*display: inline;*/
+}
+
+#sendButton {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    justify-self: center;
+}
