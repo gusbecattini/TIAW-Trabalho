@@ -5,7 +5,7 @@ var footerContent = `
         <div class="col-md-4 my-5 px-5">
           <img src="../images/icone.png" width="100px">
         </div>
-  
+
         <div class="col-md-4 my-5">
           <p>Acompanhe-nos!</p>
           <i class="bi bi-instagram m-1" style="font-size: 25px;"></i>
@@ -14,7 +14,7 @@ var footerContent = `
           <i class="bi bi-youtube m-1" style="font-size: 25px;"></i>
           <i class="bi bi-github m-1" style="font-size: 25px;"></i>
         </div>
-  
+
         <div class="col-md-4 my-5 d">
           <p>Assine nossa <b>NewsLetter</b></p>
           <label for="exampleFormControlInput1" class="form-label">Email address</label>

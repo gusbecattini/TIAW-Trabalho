@@ -13,7 +13,14 @@
     <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="../static/code/profile.js"></script>
+    <script src="..//static/code/sendPost.js"></script>
+    <script src="../static/code/test.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.7.0.js"
+			  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+			  crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header"></header>
@@ -32,6 +39,15 @@
                     </div>
                     <div class="col-md-7 col-sm-12 p-2" style="text-align: center;">
                         <h2>User Posts</h2>
+                        <div id="userPost">
+                            <div class="p-2 border border-2 rounded bg-body-secondary" id="postDiv" style="text-align: justify;">
+                            <p id="output"></p>
+                            <script>
+                                var textareaValue = sessionStorage.getItem('textareaValue');
+                                document.getElementById('output').innerText = textareaValue;
+                            </script>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-1 col-sm-12 p-2 d-block" style="text-align: center;">
                         <div style="margin-top: 50px; padding: 25%;">
@@ -43,12 +59,16 @@
                 <!--</div>-->
             </div>
         </div>
+
         <style>
             @media (max-width:1000px) {
                 #content{
                     display: block;
                 }
-    
+
+            }
+            #output{
+                color: black;
             }
         </style>
     </main>

@@ -9,6 +9,9 @@ html{
         
   }
 
+  main{
+    margin-bottom: 100px;
+  }
 
   .btn{
     background-color: #31313b;
@@ -25,7 +28,9 @@ html{
         
         }
         
-  
+  #lista > li{
+   list-style-type: ; 
+  }
         
   #input1{
    height: 60px;
