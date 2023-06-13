@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeConnect</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../static/Styles/all.css">
+  <link rel="stylesheet" href="../static/Styles/login.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
   <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,35 +58,44 @@
                       <h3 class="panel-title">Crie sua conta</h3>
                   </div>
                   <div class="panel-body">
-                      <form class="row g-3">
-                          <div class="col-12">
-                              <input type="text" class="form-control" id="inputName" placeholder="Nome">
+                      <form id="cadastroForm" class="row g-3">
+                          <div class="col-6">
+                              <input type="text" class="form-control" id="inputName" placeholder="Nome" required>
                           </div>
-                          <div class="col-12">
-                              <input type="text" class="form-control" id="inputLastName" placeholder="Sobrenome">
+                          <div class="col-6">
+                              <input type="text" class="form-control" id="inputLastName" placeholder="Sobrenome" required>
                           </div>
-                          <div class="col-md-6">
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                          <div class="col-12 mb-2">
+                            <div class="input-group">
+                              <span class="input-group-text" id="basic-addon1">@</span>
+                              <input type="text" class="form-control" id="user" placeholder="Username" aria-label="Username" aria-describedby="user" required>
+                            </div>
+                            <div class="msg">
+                              <p>O nome de usuário já está sendo utilizado!</p>
+                            </div>
                           </div>
-                          <div class="col-md-6">
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                          <div class="col-md-6 mt-2">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                          </div>
+                          <div class="col-md-6 mt-2">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Senha" required>
                           </div>
                           <div class="col-md-12">
-                            <label for="inputState" class="form-label">Grau</label>
-                            <select id="inputState" class="form-select">
+                            <label for="grau" class="form-label">Grau</label>
+                            <select id="grau" class="form-select">
                               <option selected>Selecione...</option>
-                              <option>Professor</option>
-                              <option>Especialista na área</option>
-                              <option>Graduando</option>
-                              <option>Estudante autônomo</option>
+                              <option value="professor">Professor</option>
+                              <option value="especialista">Especialista na área</option>
+                              <option value="graduando">Graduando</option>
+                              <option value="estudante">Estudante autônomo</option>
                             </select>
                           </div>
                           <!--<div class="col-md-4">
                             <label for="inputZip" class="form-label">Experiência</label>
                             <input type="text" class="form-control" id="inputexperiencia" placeholder="Tempo de experiência">
                           </div>-->
-                          <div class="col-12">
-                            <button type="submit" class="btn btn-dark">Sign up</button>
+                          <div class="col-12" style="text-align: center;">
+                            <input type="submit" value="Cadastrar" class="btn btn-dark">
                           </div>
                         </form>
                   </div>
@@ -91,32 +104,9 @@
       </div>
     </div>
   </main>
-
-<style>
-  h3 {
-    margin-bottom: 20px;
-  }
-  .row{
-    justify-content: center;
-    margin: 50px, 0px
-  }
-  #login{
-    background-color: #f8f8f8;
-    padding: 90px 60px;
-    border-radius: 10px;
-    margin-top: 150px;
-  }
-  .panel-body button{
-    width: 100%;
-  }
-
-  .panel-body{
-    margin-top: 30px;
-  }
-</style>
-
-<footer id="footer"></footer>
-<script src="../static/code/footer.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <footer id="footer"></footer>
+  <script src="../static/code/footer.js"></script>
+  <script src="../static/code/createAccount.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

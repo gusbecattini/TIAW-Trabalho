@@ -1,0 +1,40 @@
+.profile {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .profile h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .profile ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profile li {
+    margin-bottom: 5px;
+  }
+  
+  .profile li strong {
+    font-weight: bold;
+  }
+  
+  

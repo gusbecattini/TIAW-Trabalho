@@ -17,9 +17,9 @@ var footerContent = `
 
         <div class="col-md-4 my-5 d">
           <p>Assine nossa <b>NewsLetter</b></p>
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <!--<label for="exampleFormControlInput1" class="form-label">Email address</label>-->
           <div class="row">
-            <div class="col-12 d-flex">
+            <div class="col-12 d-flex" style="text-align: center;">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="max-width: fit-content;">
               <button type="button" class="btn btn-light mx-2" style="left: 0;">Inscreva-se</button>
             </div>

@@ -13,20 +13,13 @@
     <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="../static/code/profile.js"></script>
-    <script src="..//static/code/sendPost.js"></script>
-    <script src="../static/code/test.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <script
-			  src="https://code.jquery.com/jquery-3.7.0.js"
-			  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-			  crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header"></header>
     <script src="../static/code/header.js"></script>
     <main>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row   p-2 border border-3 rounded m-5" style="justify-content: center;">
                 <!--<div id="content" class="col-md-9 d-flex p-2 border border-3 rounded d-flex">-->
                     <div class="col-md-4 col-sm-12 p-2" style="text-align: center; margin-top: 50px; padding: 25%;">
@@ -49,26 +42,65 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-1 col-sm-12 p-2 d-block" style="text-align: center;">
                         <div style="margin-top: 50px; padding: 25%;">
-                            <i class="bi bi-gear-fill" style="font-size: 35px;"></i>
-                            <i class="bi bi-send-plus" style="font-size: 35px;"></i>
-                            <i class="bi bi-bell" style="font-size: 35px;"></i>
+                            <!-- Button trigger modal -->
+                            <i class="bi bi-gear-fill" style="font-size: 35px;" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                            </i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Configurações e Preferências</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <a href="post.html"><i class="bi bi-send-plus" style="font-size: 35px; color: #31313b;"></i></a>
+
+                            <!-- Button trigger modal -->
+                            <i class="bi bi-bell" style="font-size: 35px;" data-bs-toggle="modal" data-bs-target="#notificationsModal">
+                            </i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="notificationsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notificações</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 <!--</div>-->
             </div>
         </div>
-
         <style>
             @media (max-width:1000px) {
                 #content{
                     display: block;
                 }
 
-            }
-            #output{
-                color: black;
             }
         </style>
     </main>

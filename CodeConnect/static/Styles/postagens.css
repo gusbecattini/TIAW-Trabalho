@@ -4,13 +4,14 @@ html{
   }
   
   body{
-        min-height: calc(100vh - 497px - 206px);
-        height: 100%;
+      min-height: calc(100vh - 497px - 206px);
+      height: 100%;
         
   }
 
   main{
     margin-bottom: 100px;
+    text-align: center;
   }
 
   .btn{
@@ -19,19 +20,14 @@ html{
   }
   
   #button-addon2{
-        color:white;        
+      color:white;        
    }
         
   #lista > li > a {
    text-decoration: none; 
    color: grey; 
-        
-        }
-        
-  #lista > li{
-   list-style-type: ; 
-  }
-        
+      }
+           
   #input1{
    height: 60px;
   }
@@ -39,18 +35,57 @@ html{
   #cards{
     margin-bottom: 10px;
   }
+
+  #comments{
+      text-align: justify;
+  }
   
   #footer{
     bottom: 0;
     width: 100%;
-    margin: 0;
+    position: fixed;
    
     
   
   }
+  .modal-footer{
+      justify-content: space-around;
+  }
+
+  .modal-footer input{
+      padding: 5px;
+      width: 85%;
+      height: 30px;
+      border-style: none none solid none;
+      border-width: 2px;
+      border-color: #31313b;
+      border-radius: 8px;
+      margin: 3px;
+  }
+
+  #inputComentario{
+      width: 100%;
+      display: flex;
+      margin: 5px;
+  }
+
+  #bntComment{
+      width: 10%;
+      height: 30px;
+      padding: 5px;
+      font-size: 10px;
+      background-color: #31313b;
+      color: #fdfdfd;
+      border: none;
+  }
+
+  .modal-footer button {
+      height: 50px;
+      width: 100%;
+      border-radius: 20px;
+  }
   
-  @media (max-width: 993px)
-  { 
+  @media (max-width: 993px){ 
         #lista{
               display: none;
         }

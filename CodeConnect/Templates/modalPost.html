@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="../static/Styles/all.css">
     <link rel="stylesheet" href="../static/Styles/post.css">
     <link rel="shortcut icon" href="../images/icone.png" type="image/x-icon">
-    <script src="../static/code/post.js"></script>
+    <script src="../static/code/sendModal.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.7.0.js"
+			  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+			  crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -42,6 +46,7 @@
                     <div class="col-md-12 m-2" id="textButtons"   style="justify-content: center;">
                         <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
                             <button type="button" onclick="bold()" class=" shadow-sm btn btn-outline-secondary" data-toggle="tooltip" data-placement="top" title="Negrito"><strong>B</strong></button>
+
                         </div>
                         <div class="col-md-4 col-sm-4 mx-2" style="max-width: fit-content;">
                             <button type="button" onclick="italic()" class="shadow-sm btn btn-outline-secondary"class=" shadow-sm btn btn-outline-secondary"data-toggle="tooltip"
@@ -78,33 +83,33 @@
                     </div>
                 </div>
             </div>
-            <!--Caixa de texto-->
+        <div class="row" style="justify-content: center;">
+            <div class="col-md-8">
+        <form id="myForm1" class="form-floating">
+            <textarea id="myTextarea1" class="form-control" style="height: 400px;" autofocus></textarea>
+            <br>
             <div class="row" style="justify-content: center;">
-                <div class="col-md-8">
-            <form id="myForm" class="form-floating">
-                <textarea id="myTextarea" class="form-control" style="height: 400px;" autofocus></textarea>
-                <br>
-                <div class="row" style="justify-content: center;">
-                    <div class="col-md-4 text-center m-5">
-                <button type="submit" id="sendButton" class="btn btn-dark p-2">Enviar<i class="bi bi-send-check-fill mx-2"></i></button>
-            </div>
-            </div>
-              </form>
-            </div>
-            </div>
-              <script>
-                function handleFormSubmission(event) {
-                  event.preventDefault();
+                <div class="col-md-4 text-center m-5">
+            <button type="submit" id="modalButton" class="btn btn-dark p-2">Enviar<i class="bi bi-send-check-fill mx-2"></i></button>
+        </div>
+        </div>
+          </form>
+        </div>
+        </div>
+          <script>
+            function handleFormSubmission(event) {
+              event.preventDefault();
 
-                  var textareaValue = document.getElementById('myTextarea').value;
-                  sessionStorage.setItem('textareaValue', textareaValue);
+              var textareaValue = document.getElementById('myTextarea1').value;
+              sessionStorage.setItem('textareaValue1', textareaValue);
 
 
-                  window.location.href = 'profile.html';
-                }
 
-                document.getElementById('myForm').addEventListener('submit', handleFormSubmission);
-              </script>
+              window.location.href = 'postagens.html';
+            }
+
+            document.getElementById('myForm1').addEventListener('submit', handleFormSubmission);
+          </script>
 
     </main>
 	<footer id="footer"></footer>
