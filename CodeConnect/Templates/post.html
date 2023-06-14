@@ -91,20 +91,21 @@
             </div>
               </form>
             </div>
-            </div>
-              <script>
-                function handleFormSubmission(event) {
-                  event.preventDefault();
+            </div>  
+        </div>
+        <script>
+            function handleFormSubmission(event) {
+              event.preventDefault();
 
-                  var textareaValue = document.getElementById('myTextarea').value;
-                  sessionStorage.setItem('textareaValue', textareaValue);
+              var textareaValue = document.getElementById('myTextarea').value;
+              sessionStorage.setItem('textareaValue', textareaValue);
 
 
-                  window.location.href = 'profile.html';
-                }
+              window.location.href = 'profile.html';
+            }
 
-                document.getElementById('myForm').addEventListener('submit', handleFormSubmission);
-              </script>
+            document.getElementById('myForm').addEventListener('submit', handleFormSubmission);
+          </script>
 
     </main>
 	<footer id="footer"></footer>
